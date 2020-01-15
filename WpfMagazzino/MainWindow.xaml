@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfMagazzino.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMagazzino"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="37*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtIndmento" HorizontalAlignment="Left" Height="38" Margin="104,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="txtPrezzo" HorizontalAlignment="Left" Height="38" Margin="334,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Label Content="inserisci indumeto" HorizontalAlignment="Left" Margin="104,96,0,0" VerticalAlignment="Top" Width="176" Height="41" FontSize="20"/>
+        <Label Content="  inserisci prezzo" HorizontalAlignment="Left" Margin="334,96,0,0" VerticalAlignment="Top" Height="41" Width="176" FontSize="20"/>
+        <Button x:Name="btnImmetti" Content="Metti" HorizontalAlignment="Left" Margin="140,225,0,0" VerticalAlignment="Top" Width="140" Height="47" FontSize="22" Click="btnImmetti_Click" Grid.RowSpan="2"/>
+        <Button x:Name="btnCreaFile" Content="Crea File" HorizontalAlignment="Left" Margin="334,224,0,0" VerticalAlignment="Top" Width="140" Height="47" FontSize="24" Click="btnCreaFile_Click" Grid.RowSpan="2"/>
+        <Label x:Name="LblLista" Content="" HorizontalAlignment="Left" Margin="560,55,0,0" VerticalAlignment="Top" Width="195" Height="345" Grid.RowSpan="2"/>
+        <Label Content="           Oggetti" HorizontalAlignment="Left" Margin="560,16,0,0" VerticalAlignment="Top" Width="195" FontSize="18"/>
+
+    </Grid>
+</Window>
